@@ -112,10 +112,6 @@
         "payload": "{{payload}}",
         "timeout": "",
         "customTimeout": false,
-        "credentials": {
-            "user": "",
-            "password": ""
-        },
         "x": 420,
         "y": 280,
         "wires": [
@@ -261,11 +257,6 @@
         "rhost": "[[REDIS_HOST]]",
         "rport": "[[REDIS_PORT]]",
         "rpass": "[[REDIS_PASSWORD]]",
-        "credentials": {
-            "newlogin": "12",
-            "newpassword": "22",
-            "newpasswordtest": "33"
-        },
         "x": 260,
         "y": 560,
         "wires": [
@@ -640,6 +631,30 @@
         ]
     },
     {
+        "id": "71f67b2b3ffe1cd8",
+        "type": "telegram sender",
+        "z": "4085b7988377f648",
+        "name": "",
+        "bot": "c9cdec4beefd46af",
+        "x": 470,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ecd0c5dba4837da",
+        "type": "telegram sender",
+        "z": "4085b7988377f648",
+        "name": "",
+        "bot": "c9cdec4beefd46af",
+        "x": 470,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "2bd27b9f95b02ad4",
         "type": "redis-config",
         "name": "Local",
@@ -657,13 +672,7 @@
         "uritest": "",
         "optionstest": "",
         "test": "",
-        "nametest": "",
-        "credentials": {
-            "user": "",
-            "password": "",
-            "usertest": "",
-            "passwordtest": ""
-        }
+        "nametest": ""
     },
     {
         "id": "bacd51cd.6dea1",
@@ -695,12 +704,7 @@
         "server": "10.1.192.168",
         "encyption": true,
         "database": "",
-        "port": "7788",
-        "credentials": {
-            "username": "",
-            "password": "",
-            "domain": ""
-        }
+        "port": "7788"
     },
     {
         "id": "348f5e192a95fca2",
@@ -709,11 +713,7 @@
         "clientid": "",
         "security_protocol": "plaintext",
         "sasl_mechanism": "GSSAPI",
-        "ssl_ca_location": "",
-        "credentials": {
-            "sasl_username": "",
-            "sasl_password": ""
-        }
+        "ssl_ca_location": ""
     },
     {
         "id": "645831057a6b5545",
@@ -747,13 +747,7 @@
         "checkInterval": "10",
         "selfSign": true,
         "usetls": false,
-        "useCredentials": false,
-        "credentials": {
-            "testUser": "",
-            "testPassword": "",
-            "user": "",
-            "password": ""
-        }
+        "useCredentials": false
     },
     {
         "id": "bd48deb931b26b7f",
@@ -763,11 +757,7 @@
         "vhost": "",
         "keepalive": "30",
         "usetls": false,
-        "verifyservercert": true,
-        "credentials": {
-            "user": "",
-            "password": ""
-        }
+        "verifyservercert": true
     },
     {
         "id": "914ec1d674b63065",
@@ -793,10 +783,32 @@
         "willQos": "0",
         "willPayload": "",
         "willMsg": {},
-        "sessionExpiry": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c9cdec4beefd46af",
+        "type": "telegram bot",
+        "botname": "test_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false,
         "credentials": {
-            "user": "",
-            "password": ""
+            "token": "65464113"
         }
     }
 ]
