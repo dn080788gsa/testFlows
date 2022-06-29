@@ -655,6 +655,21 @@
         ]
     },
     {
+        "id": "f89b3edfb6f2d187",
+        "type": "function",
+        "z": "4085b7988377f648",
+        "name": "flow params",
+        "func": "",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "// Добавленный здесь код будет исполняться\n// однократно при развертывании узла.\n\nif (global.get(\"NODE_ENV\") == \"development\") {\n    flow.set([\n        \"startPb\",\n        \"cardsforwave\",\n        \"saw121212\",\n        \"sup\"\n    ], [\n        \"https://test-start.privatbank.ua\",\n        \"https://stat-vbo.test.it.loc\",\n        \"https://start-vbo.test.it.loc\",\n        \"https://inform-sup.test.it.loc\"\n    ]);\n} else {\n    flow.set([\n        \"startPb\",\n        \"cardsforwave\",\n        \"saw121212\",\n        \"sup\"\n    ], [\n        \"https://start.privatbank.ua\",\n        \"https://stat.privatbank.ua\",\n        \"https://start.privatbank.ua\",\n        \"https://inform-sup.pb.ua\"\n    ]);\n}\n\n\n\n",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 60,
+        "wires": []
+    },
+    {
         "id": "2bd27b9f95b02ad4",
         "type": "redis-config",
         "name": "Local",
